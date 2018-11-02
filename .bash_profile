@@ -25,6 +25,17 @@ alias nr="npm run"
 
 # Extra programs
 alias ngrok="~/.ngrok/ngrok"
+alias vault="~/vault"
+
+# Fuck autocorrect
+eval $(thefuck --alias)
+
+# Increase limit of opened files
+ulimit 65536
+
+# Increase size of console history
+export HISTFILESIZE=1000000
+export HISTSIZE=100000
 
 # Project nav
 alias cdf="cd ~/Documents/FES/"
@@ -85,3 +96,6 @@ elif type compctl &>/dev/null; then
   compctl -K _npm_completion npm
 fi
 ###-end-npm-completion-###
+[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
+PATH=$PATH:/opt/metasploit-framework/bin
+export PATH=$PATH:/opt/metasploit-framework/bin

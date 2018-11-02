@@ -10,6 +10,7 @@ Plug 'luochen1990/rainbow'
 Plug 'janko-m/vim-test'
 Plug 'Townk/vim-autoclose'
 Plug 'vim-scripts/AutoComplPop'
+Plug 'JamshedVesuna/vim-markdown-preview'
 
 " JS
 Plug 'pangloss/vim-javascript'
@@ -29,6 +30,10 @@ map <C-n> :NERDTreeToggle<CR>
 nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 let g:ctrlp_dont_split = 'NERD'
 let g:WebDevIconsUnicodeGlyphDoubleWidth = 0
+
+" Change keyboard mapping for markdown preview
+let vim_markdown_preview_hotkey='<C-m>'
+let vim_markdown_preview_github=1
 
 " Configures Ack.vim to use ag the silver searcher
 if executable('ag')
