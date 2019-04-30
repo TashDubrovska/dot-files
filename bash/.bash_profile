@@ -1,4 +1,6 @@
+export PY_USER_BIN=$(python -c 'import site; print(site.USER_BASE + "/bin")')
 export PATH="$HOME/bin:$PATH"
+export PATH=$PY_USER_BIN:$PATH
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -38,7 +40,7 @@ export HISTFILESIZE=1000000
 export HISTSIZE=100000
 
 # Project nav
-alias cdf="cd ~/Documents/FES/"
+alias cdc="cd ~/Documents/code"
 ###-begin-npm-completion-###
 #
 # npm command completion script
