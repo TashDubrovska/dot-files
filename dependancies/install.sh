@@ -1,6 +1,6 @@
 
 sudo apt update
-sudo apt install git curl python3 openssh-client
+sudo apt install git curl python3 openssh-client vim
 
 # Install Slack
 wget https://downloads.slack-edge.com/linux_releases/slack-desktop-3.3.8-amd64.deb
