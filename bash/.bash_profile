@@ -33,7 +33,10 @@ alias vault="~/vault"
 eval $(thefuck --alias)
 
 # Increase limit of opened files
-ulimit 65536
+ulimit -n 65536
+
+# Increase limit of file size
+ulimit -f unlimited
 
 # Increase size of console history
 export HISTFILESIZE=1000000
