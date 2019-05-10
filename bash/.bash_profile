@@ -32,9 +32,6 @@ alias vault="~/vault"
 # Fuck autocorrect
 eval $(thefuck --alias)
 
-# Increase limit of opened files
-ulimit -n 65536
-
 # Increase limit of file size
 ulimit -f unlimited
 
