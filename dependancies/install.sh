@@ -1,5 +1,5 @@
 sudo apt -y update
-sudo apt -y install git curl python3 openssh-client snapd vim thefuck docker
+sudo apt -y install git curl python3 openssh-client snapd vim thefuck docker.io
 
 # Install Slack
 wget https://downloads.slack-edge.com/linux_releases/slack-desktop-3.4.0-amd64.deb
